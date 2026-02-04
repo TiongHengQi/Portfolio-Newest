@@ -58,6 +58,7 @@ export const projectsData: Record<string, {
       "/images/pdprojects.png",
       "/images/pdproject1.png",
       "/images/pdproject2.png",
+      "/images/pdproject3.png",
     ],
     role: "UI/UX Designer and Developer",
     year: "2025",
@@ -175,6 +176,6 @@ export const projectsByCategory = {
   Development: [
     { id: 2, name: "Portfolio Website", image: "/images/pdhome1.png" },
     { id: 3, name: "Travel List App", image: "/images/travellist.png" },
-    { id: 4, name: "The EscapeDream", image: "/images/escapedream-vr.png" },
+    { id: 4, name: "The EscapeDream", image: "/images/VR1.png" },
   ],
 }
