@@ -21,10 +21,12 @@ export const projectsData: Record<string, {
 }> = {
   "1": {
     name: "SUSclothing",
-    mainImage: "/images/sustainable-fashion-app.png",
+    mainImage: "/images/susclothinghome.png",
     images: [
-      "/images/sustainable-fashion-app.png",
-      // Add more images here for SUSclothing
+      "/images/susclothinghome.png",
+      "/images/susclothingcart.png",
+      "/images/susclothingfav1.png",
+      "/images/susclothingfav2.png",
     ],
     role: "Solo Product Designer and Developer",
     year: "2025",
@@ -72,11 +74,7 @@ export const projectsData: Record<string, {
   },
   "3": {
     name: "Travel List App",
-    mainImage: "/images/travel-list-app.png",
-    images: [
-      "/images/travel-list-app.png",
-      // Add more images here for Travel List App
-    ],
+    mainImage: "/images/travellist.png",
     role: "UI/UX Designer and Developer",
     year: "2025",
     link: "https://travel-list-app-tau-three.vercel.app/",
@@ -131,11 +129,12 @@ export const projectsData: Record<string, {
   },
   "5": {
     name: "GeoHelp – City in Nature",
-    mainImage: "/images/geohelp-app.png",
+    mainImage: "/images/ghhome.png",
     images: [
-      "/images/geohelp-map.png",
-      "/images/geohelp-request-panel.png",
-      "/images/geohelp-form.png",
+      "/images/ghhome.png",
+      "/images/ghmap.png",
+      "/images/ghlist.png",
+      "/images/ghrequest.png",
     ],
     role: "UI/UX Designer and Frontend Developer",
     year: "2025",
