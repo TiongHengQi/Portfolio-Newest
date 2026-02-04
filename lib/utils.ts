@@ -50,10 +50,13 @@ export const projectsData: Record<string, {
   },
   "2": {
     name: "Portfolio Website",
-    mainImage: "/images/portfolio-website.png",
+    mainImage: "/images/pdhome1.png",
     images: [
-      "/images/portfolio-website.png",
-      // Add more images here for Portfolio Website
+      "/images/pdhome1.png",
+      "/images/pdhome2.png",
+      "/images/pdprojects.png",
+      "/images/pdproject1.png",
+      "images/pdproject2.png",
     ],
     role: "UI/UX Designer and Developer",
     year: "2025",
