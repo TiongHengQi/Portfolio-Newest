@@ -97,6 +97,39 @@ export const projectsData: Record<string, {
       "Real-time list updates without refreshing the page",
     ],
   },
+  "4": {
+    name: "The EscapeDream",
+    mainImage: "/images/escapedream-vr.png",
+    images: [
+      "/images/escapedream-room1.png",
+      "/images/escapedream-room2.png",
+      "/images/escapedream-room3.png",
+      "/images/escapedream-room4.png",
+    ],
+    role: "VR Game Designer and Developer",
+    year: "2025",
+    link: "",
+    status: "concept / vertical-slice",
+    description:
+      "The EscapeDream is a surreal VR escape room experience inspired by a recurring dream and atmospheric puzzle games. Players navigate through a sequence of four symbolic rooms, solving environmental puzzles that blur the line between reality and illusion.",
+    what:
+      "Designed as a vertical slice, the game demonstrates core VR mechanics, immersive puzzle design, and narrative progression through dream logic rather than explicit storytelling. Each room introduces a distinct puzzle that builds upon symbols and knowledge discovered earlier, encouraging intuition, observation, and experimentation.",
+    focus: [
+      "Designing immersive VR escape room puzzles driven by environmental storytelling",
+      "Creating a cohesive game loop that blends illusion, exploration, and logic",
+      "Applying dream-inspired narrative concepts to interactive gameplay",
+    ],
+    tags: ["VR", "GAME DESIGN", "PUZZLE DESIGN", "IMMERSIVE EXPERIENCE", "VERTICAL SLICE"],
+    features: [
+      "Four-room VR escape experience with interconnected puzzles",
+      "Torch sequence puzzle using order-based logic",
+      "Illusion-based endless staircase mechanic",
+      "Environmental interaction using physics-based items",
+      "Symbol-driven final puzzle combining clues from all previous rooms",
+      "Minimal diegetic UI to maintain immersion",
+    ],
+  },
+
 }
 
 export const projectsByCategory = {
@@ -104,5 +137,6 @@ export const projectsByCategory = {
   Development: [
     { id: 2, name: "Portfolio Website", image: "/images/portfolio-website.png" },
     { id: 3, name: "Travel List App", image: "/images/travel-list-app.png" },
+    { id: 4, name: "The EscapeDream", image: "/images/escapedream-vr.png" },
   ],
 }
