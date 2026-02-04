@@ -128,6 +128,7 @@ export default function ProjectDetail() {
               images={project.images || [project.mainImage]}
               alt={project.name}
               autoPlayInterval={4000}
+              isPortrait={project.isPortrait}
             />
           </div>
 

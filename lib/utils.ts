@@ -18,6 +18,7 @@ export const projectsData: Record<string, {
   focus: string[]
   tags: string[]
   features: string[]
+  isPortrait?: boolean
 }> = {
   "1": {
     name: "SUSclothing",
@@ -136,6 +137,7 @@ export const projectsData: Record<string, {
       "/images/ghlist.png",
       "/images/ghrequest.png",
     ],
+    isPortrait: true,
     role: "UI/UX Designer and Frontend Developer",
     year: "2025",
     link: "",
@@ -162,12 +164,12 @@ export const projectsData: Record<string, {
 
 export const projectsByCategory = {
   Design: [
-    { id: 1, name: "SUSclothing", image: "/images/sustainable-fashion-app.png" },
-    { id: 5, name: "GeoHelp – City in Nature", image: "/images/geohelp-app.png" },
+    { id: 1, name: "SUSclothing", image: "/images/susclothinghome.png" },
+    { id: 5, name: "GeoHelp – City in Nature", image: "/images/ghhome.png" },
   ],
   Development: [
     { id: 2, name: "Portfolio Website", image: "/images/portfolio-website.png" },
-    { id: 3, name: "Travel List App", image: "/images/travel-list-app.png" },
+    { id: 3, name: "Travel List App", image: "/images/travellist.png" },
     { id: 4, name: "The EscapeDream", image: "/images/escapedream-vr.png" },
   ],
 }

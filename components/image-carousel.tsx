@@ -9,9 +9,10 @@ interface ImageCarouselProps {
   images: string[]
   alt: string
   autoPlayInterval?: number
+  isPortrait?: boolean
 }
 
-export function ImageCarousel({ images, alt, autoPlayInterval = 4000 }: ImageCarouselProps) {
+export function ImageCarousel({ images, alt, autoPlayInterval = 4000, isPortrait = false }: ImageCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isHovered, setIsHovered] = useState(false)
 
@@ -53,28 +54,47 @@ export function ImageCarousel({ images, alt, autoPlayInterval = 4000 }: ImageCar
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Main Image */}
-      <div className="relative aspect-video">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={cn(
-              "absolute inset-0 transition-opacity duration-700 ease-in-out",
-              index === currentIndex ? "opacity-100" : "opacity-0"
-            )}
-          >
-            <Image
-              src={image || "/placeholder.svg"}
-              alt={`${alt} - Image ${index + 1}`}
-              fill
-              className="object-cover"
-              priority={index === 0}
-            />
-          </div>
-        ))}
-      </div>
+      {isPortrait ? (
+        <div className="relative flex justify-center items-center gap-3 md:gap-6 bg-gray-900 py-6 px-4 md:px-8">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className="relative h-[400px] md:h-[520px] aspect-[9/19] rounded-xl overflow-hidden shadow-2xl border border-gray-700"
+            >
+              <Image
+                src={image || "/placeholder.svg"}
+                alt={`${alt} - Image ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="relative aspect-video">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={cn(
+                "absolute inset-0 transition-opacity duration-700 ease-in-out",
+                index === currentIndex ? "opacity-100" : "opacity-0"
+              )}
+            >
+              <Image
+                src={image || "/placeholder.svg"}
+                alt={`${alt} - Image ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
-      {/* Navigation Arrows - Only show if more than 1 image */}
-      {images.length > 1 && (
+      {/* Navigation Arrows - Only show if more than 1 image and not portrait */}
+      {images.length > 1 && !isPortrait && (
         <>
           <button
             onClick={goToPrevious}
@@ -93,8 +113,8 @@ export function ImageCarousel({ images, alt, autoPlayInterval = 4000 }: ImageCar
         </>
       )}
 
-      {/* Dot Indicators - Only show if more than 1 image */}
-      {images.length > 1 && (
+      {/* Dot Indicators - Only show if more than 1 image and not portrait */}
+      {images.length > 1 && !isPortrait && (
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
           {images.map((_, index) => (
             <button
@@ -112,8 +132,8 @@ export function ImageCarousel({ images, alt, autoPlayInterval = 4000 }: ImageCar
         </div>
       )}
 
-      {/* Image Counter */}
-      {images.length > 1 && (
+      {/* Image Counter - Only show if more than 1 image and not portrait */}
+      {images.length > 1 && !isPortrait && (
         <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-1 rounded-full text-sm font-medium">
           {currentIndex + 1} / {images.length}
         </div>
