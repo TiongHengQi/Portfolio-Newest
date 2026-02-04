@@ -163,7 +163,7 @@ export const projectsData: Record<string, {
 export const projectsByCategory = {
   Design: [
     { id: 1, name: "SUSclothing", image: "/images/sustainable-fashion-app.png" },
-  { id: 5, name: "GeoHelp – City in Nature", image: "/images/geohelp-app.png" },
+    { id: 5, name: "GeoHelp – City in Nature", image: "/images/geohelp-app.png" },
   ],
   Development: [
     { id: 2, name: "Portfolio Website", image: "/images/portfolio-website.png" },
