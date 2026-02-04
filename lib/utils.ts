@@ -19,6 +19,7 @@ export const projectsData: Record<string, {
   tags: string[]
   features: string[]
   isPortrait?: boolean
+  demoVideo?: { src: string }
 }> = {
   "1": {
     name: "SUSclothing",
@@ -56,7 +57,7 @@ export const projectsData: Record<string, {
       "/images/pdhome2.png",
       "/images/pdprojects.png",
       "/images/pdproject1.png",
-      "images/pdproject2.png",
+      "/images/pdproject2.png",
     ],
     role: "UI/UX Designer and Developer",
     year: "2025",
@@ -100,37 +101,38 @@ export const projectsData: Record<string, {
     ],
   },
   "4": {
-    name: "The EscapeDream",
-    mainImage: "/images/escapedream-vr.png",
-    images: [
-      "/images/escapedream-room1.png",
-      "/images/escapedream-room2.png",
-      "/images/escapedream-room3.png",
-      "/images/escapedream-room4.png",
-    ],
-    role: "VR Game Designer and Developer",
-    year: "2025",
-    link: "",
-    status: "concept / vertical-slice",
-    description:
-      "The EscapeDream is a surreal VR escape room experience inspired by a recurring dream and atmospheric puzzle games. Players navigate through a sequence of four symbolic rooms, solving environmental puzzles that blur the line between reality and illusion.",
-    what:
-      "Designed as a vertical slice, the game demonstrates core VR mechanics, immersive puzzle design, and narrative progression through dream logic rather than explicit storytelling. Each room introduces a distinct puzzle that builds upon symbols and knowledge discovered earlier, encouraging intuition, observation, and experimentation.",
-    focus: [
-      "Designing immersive VR escape room puzzles driven by environmental storytelling",
-      "Creating a cohesive game loop that blends illusion, exploration, and logic",
-      "Applying dream-inspired narrative concepts to interactive gameplay",
-    ],
-    tags: ["VR", "GAME DESIGN", "PUZZLE DESIGN", "IMMERSIVE EXPERIENCE", "VERTICAL SLICE"],
-    features: [
-      "Four-room VR escape experience with interconnected puzzles",
-      "Torch sequence puzzle using order-based logic",
-      "Illusion-based endless staircase mechanic",
-      "Environmental interaction using physics-based items",
-      "Symbol-driven final puzzle combining clues from all previous rooms",
-      "Minimal diegetic UI to maintain immersion",
-    ],
-  },
+      name: "The EscapeDream",
+      mainImage: "/images/VR1.png",
+      images: [
+        "/images/VR1.png",
+        "/images/VR2.png",
+        "/images/VR3.png",
+        "/images/VR4.png",
+      ],
+      role: "VR Game Designer and Developer",
+      year: "2025",
+      link: "",
+      status: "concept / vertical-slice",
+      description:
+        "The EscapeDream is a surreal VR escape room experience inspired by a recurring dream and atmospheric puzzle games. Players navigate through a sequence of four symbolic rooms, solving environmental puzzles that blur the line between reality and illusion. This was my first attempt at creating a VR game, which presented unique challenges in design, interaction, and immersive storytelling.",
+      what:
+        "Designed as a vertical slice, the game demonstrates core VR mechanics, immersive puzzle design, and narrative progression through dream logic rather than explicit storytelling. Each room introduces a distinct puzzle that builds upon symbols and knowledge discovered earlier, encouraging intuition, observation, and experimentation. As my first VR project, the visuals and polish may be modest, but the core gameplay and immersive concepts show the potential of my design approach.",
+      focus: [
+        "Designing immersive VR escape room puzzles driven by environmental storytelling",
+        "Creating a cohesive game loop that blends illusion, exploration, and logic",
+        "Learning and applying VR development techniques for the first time",
+      ],
+      tags: ["VR", "GAME DESIGN", "PUZZLE DESIGN", "IMMERSIVE EXPERIENCE", "VERTICAL SLICE", "FIRST VR PROJECT"],
+      features: [
+        "Four-room VR escape experience with interconnected puzzles",
+        "Torch sequence puzzle using order-based logic",
+        "Illusion-based endless staircase mechanic (Currently Bugged and Incomplete)",
+        "Environmental interaction using physics-based items",
+        "Symbol-driven final puzzle combining clues from all previous rooms",
+        "Minimal diegetic UI to maintain immersion",
+      ],
+      demoVideo: { src: "/videos/escapedream-demo.mp4" },
+    },
   "5": {
     name: "GeoHelp – City in Nature",
     mainImage: "/images/ghhome.png",
@@ -171,7 +173,7 @@ export const projectsByCategory = {
     { id: 5, name: "GeoHelp – City in Nature", image: "/images/ghhome.png" },
   ],
   Development: [
-    { id: 2, name: "Portfolio Website", image: "/images/portfolio-website.png" },
+    { id: 2, name: "Portfolio Website", image: "/images/pdhome1.png" },
     { id: 3, name: "Travel List App", image: "/images/travellist.png" },
     { id: 4, name: "The EscapeDream", image: "/images/escapedream-vr.png" },
   ],
