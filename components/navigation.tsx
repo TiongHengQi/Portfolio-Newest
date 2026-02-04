@@ -56,7 +56,7 @@ export function Navigation() {
     <nav className="fixed top-0 w-full bg-black border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
-          <Image src="/images/Logo.png" alt="Logo" width={40} height={40} className="rounded" />
+          <Image src="/images/logo.png" alt="Logo" width={40} height={40} className="rounded" />
           <span style={{ fontFamily: "Georgia, serif" }}>HENGQI</span>
         </Link>
         <div className="flex gap-8 text-sm font-medium">
