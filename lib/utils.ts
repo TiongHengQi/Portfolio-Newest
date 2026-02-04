@@ -129,11 +129,43 @@ export const projectsData: Record<string, {
       "Minimal diegetic UI to maintain immersion",
     ],
   },
-
+  "5": {
+    name: "GeoHelp – City in Nature",
+    mainImage: "/images/geohelp-app.png",
+    images: [
+      "/images/geohelp-map.png",
+      "/images/geohelp-request-panel.png",
+      "/images/geohelp-form.png",
+    ],
+    role: "UI/UX Designer and Frontend Developer",
+    year: "2025",
+    link: "",
+    description:
+      "GeoHelp is a location-based mobile application concept designed to support Singapore’s Green Plan 2030 – City in Nature vision. Positioned as a civic and government-adjacent platform, the app prioritizes clarity, accessibility, and trust by presenting environmental help requests through a simple, map-driven interface.",
+    what:
+      "The UI/UX was intentionally kept clean, restrained, and non-ornamental to reflect the tone of a formal public-service application. Rather than focusing on visual flair, the design emphasizes clear information hierarchy, ease of navigation, and functional interactions. I led the UI/UX and visual design, while also implementing core add, update, and delete flows to support real-world usage scenarios.",
+    focus: [
+      "Designing a straightforward and accessible UI suitable for a government-style civic application",
+      "Creating clear map-based interactions that prioritize usability over visual complexity",
+      "Ensuring request creation and management flows are simple, predictable, and reliable",
+    ],
+    tags: ["UI/UX DESIGN", "CIVIC TECH", "MOBILE APP", "MAP-BASED UX", "FRONTEND"],
+    features: [
+      "Interactive map displaying location-based environmental requests",
+      "Minimal, functional UI designed for clarity and ease of use",
+      "Sliding request detail panel with subtle, non-distracting animations",
+      "Create, update, and delete request flows with form validation",
+      "Join and leave community initiatives with real-time status updates",
+      "Backend integration via RESTful APIs for persistent data storage",
+    ],
+  },
 }
 
 export const projectsByCategory = {
-  Design: [{ id: 1, name: "SUSclothing", image: "/images/sustainable-fashion-app.png" }],
+  Design: [
+    { id: 1, name: "SUSclothing", image: "/images/sustainable-fashion-app.png" },
+  { id: 5, name: "GeoHelp – City in Nature", image: "/images/geohelp-app.png" },
+  ],
   Development: [
     { id: 2, name: "Portfolio Website", image: "/images/portfolio-website.png" },
     { id: 3, name: "Travel List App", image: "/images/travel-list-app.png" },
