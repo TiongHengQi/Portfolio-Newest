@@ -14,22 +14,14 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
-  // Add your certificates here. For each certificate, provide:
-  // - title: Name of the certification
-  // - issuer: Organization that issued it
-  // - date: When it was earned
-  // - credentialUrl (optional): Link to verify the credential
-  // - image (optional): Path to the certificate image, e.g. "/images/certs/cert-name.png"
-  //
-  // Example:
-  // {
-  //   id: 1,
-  //   title: "AWS Cloud Practitioner",
-  //   issuer: "Amazon Web Services",
-  //   date: "Jan 2025",
-  //   credentialUrl: "https://...",
-  //   image: "/images/certs/aws-cloud.png",
-  // },
+  {
+    id: 1,
+    title: "React (Basic)",
+    issuer: "HackerRank",
+    date: "Feb 2026",
+    credentialUrl: "https://drive.google.com/file/d/18JFzVMjf2i1bAge9_Xe7xgjJ3xk9VLUs/view?usp=sharing",
+    image: "/images/certs/react-basic-hackerrank.png",
+  },
 ]
 
 export default function Certificates() {
