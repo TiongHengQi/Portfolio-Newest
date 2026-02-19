@@ -22,6 +22,14 @@ const certificates: Certificate[] = [
     credentialUrl: "https://drive.google.com/file/d/18JFzVMjf2i1bAge9_Xe7xgjJ3xk9VLUs/view?usp=sharing",
     image: "/images/certs/react-basic-hackerrank.png",
   },
+  {
+    id: 2,
+    title: "Figma Essential Training: The Basics",
+    issuer: "LinkedIn Learning",
+    date: "Jan 2026",
+    credentialUrl: "https://drive.google.com/file/d/1BfHLLG4ilW9vOmXX5xl9UKDvkus34UZT/view?usp=sharing",
+    image: "/images/certs/figma-basics-linkedin.png",
+  },
 ]
 
 export default function Certificates() {
